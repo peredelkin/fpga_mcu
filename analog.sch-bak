@@ -17,6 +17,8 @@ $Comp
 L Regulator_Linear:L7805 U?
 U 1 1 608A31A4
 P 1250 1050
+AR Path="/5F2B89D6/608A31A4" Ref="U?"  Part="1" 
+AR Path="/6089BBF0/608A31A4" Ref="U?"  Part="1" 
 F 0 "U?" H 1250 1292 50  0000 C CNN
 F 1 "L7805" H 1250 1201 50  0000 C CNN
 F 2 "" H 1275 900 50  0001 L CIN
@@ -45,7 +47,6 @@ F 3 "~" H 1600 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 1150 1600 1050
-Connection ~ 1600 1050
 Wire Wire Line
 	1600 1350 1600 1400
 Wire Wire Line
@@ -57,6 +58,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 608A31BA
 P 700 1250
+AR Path="/5F2B89D6/608A31BA" Ref="C?"  Part="1" 
+AR Path="/6089BBF0/608A31BA" Ref="C?"  Part="1" 
 F 0 "C?" H 792 1296 50  0000 L CNN
 F 1 "0.33uF" H 792 1205 50  0000 L CNN
 F 2 "" H 700 1250 50  0001 C CNN
@@ -77,103 +80,189 @@ MCU_12V
 Wire Wire Line
 	700  1000 700  1050
 Connection ~ 700  1050
+Text GLabel 1600 1000 1    50   Input ~ 0
+ANALOG_VCC
+Wire Wire Line
+	1600 1050 1600 1000
+Connection ~ 1600 1050
 $Comp
-L Regulator_SwitchedCapacitor:LMC7660 U?
-U 1 1 608A37BE
-P 2800 1350
-F 0 "U?" H 2800 1917 50  0000 C CNN
-F 1 "LMC7660" H 2800 1826 50  0000 C CNN
-F 2 "" H 200 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lmc7660.pdf" H 200 2550 50  0001 C CNN
-	1    2800 1350
+L Amplifier_Operational:AD8603 U?
+U 1 1 6098D7E7
+P 3700 2750
+F 0 "U?" H 3700 3231 50  0000 C CNN
+F 1 "AD8603" H 3700 3140 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3700 2750 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 3700 2950 50  0001 C CNN
+	1    3700 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:AD8603 U?
+U 1 1 609C2428
+P 3300 2200
+F 0 "U?" H 3300 2681 50  0000 C CNN
+F 1 "AD8603" H 3300 2590 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3300 2200 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 3300 2400 50  0001 C CNN
+	1    3300 2200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 1050 2150 1050
-$Comp
-L Device:C_Small C?
-U 1 1 608A5186
-P 2150 1200
-AR Path="/5F2B89D6/608A5186" Ref="C?"  Part="1" 
-AR Path="/6089BBF0/608A5186" Ref="C?"  Part="1" 
-F 0 "C?" H 2242 1246 50  0000 L CNN
-F 1 "*" H 2242 1155 50  0000 L CNN
-F 2 "" H 2150 1200 50  0001 C CNN
-F 3 "~" H 2150 1200 50  0001 C CNN
-	1    2150 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2400 1350 2150 1350
-Wire Wire Line
-	2150 1350 2150 1300
-Wire Wire Line
-	2150 1100 2150 1050
-Connection ~ 2150 1050
-Wire Wire Line
-	2150 1050 2400 1050
 $Comp
 L Device:R_Small R?
-U 1 1 608A627F
-P 2150 1700
-F 0 "R?" H 2209 1746 50  0000 L CNN
-F 1 "*" H 2209 1655 50  0000 L CNN
-F 2 "" H 2150 1700 50  0001 C CNN
-F 3 "~" H 2150 1700 50  0001 C CNN
-	1    2150 1700
-	1    0    0    -1  
+U 1 1 609C682C
+P 3350 2950
+F 0 "R?" H 3291 2904 50  0000 R CNN
+F 1 "R_Small" H 3291 2995 50  0000 R CNN
+F 2 "" H 3350 2950 50  0001 C CNN
+F 3 "~" H 3350 2950 50  0001 C CNN
+	1    3350 2950
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2400 1550 2150 1550
-Wire Wire Line
-	2150 1550 2150 1600
-Wire Wire Line
-	2150 1800 2150 1900
-Wire Wire Line
-	2150 1900 2800 1900
-Wire Wire Line
-	2800 1900 2800 1850
-Text GLabel 2800 1950 3    50   Input ~ 0
-GND
-Wire Wire Line
-	2800 1950 2800 1900
-Connection ~ 2800 1900
 $Comp
-L Device:CP_Small C?
-U 1 1 608A90EA
-P 3350 1450
-F 0 "C?" H 3438 1496 50  0000 L CNN
-F 1 "10uF" H 3438 1405 50  0000 L CNN
-F 2 "" H 3350 1450 50  0001 C CNN
-F 3 "~" H 3350 1450 50  0001 C CNN
-	1    3350 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3350 1350 3350 1250
-Wire Wire Line
-	3350 1250 3200 1250
-Wire Wire Line
-	3350 1550 3350 1650
-Wire Wire Line
-	3350 1650 3200 1650
-$Comp
-L Device:CP_Small C?
-U 1 1 608AA07F
-P 3700 1450
-F 0 "C?" H 3612 1404 50  0000 R CNN
-F 1 "10uF" H 3612 1495 50  0000 R CNN
-F 2 "" H 3700 1450 50  0001 C CNN
-F 3 "~" H 3700 1450 50  0001 C CNN
-	1    3700 1450
+L Device:R_Small R?
+U 1 1 609C8106
+P 3350 3250
+F 0 "R?" H 3291 3204 50  0000 R CNN
+F 1 "R_Small" H 3291 3295 50  0000 R CNN
+F 2 "" H 3350 3250 50  0001 C CNN
+F 3 "~" H 3350 3250 50  0001 C CNN
+	1    3350 3250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3200 1050 3700 1050
+	3800 3050 3800 3450
 Wire Wire Line
-	3700 1050 3700 1350
+	2950 2750 2950 2300
 Wire Wire Line
-	3700 1550 3700 1900
+	2950 2300 3000 2300
 Wire Wire Line
-	3700 1900 2800 1900
+	3200 2500 3200 3450
+Wire Wire Line
+	3800 2450 3800 1850
+Wire Wire Line
+	3800 1850 3200 1850
+Wire Wire Line
+	3200 1850 3200 1900
+Wire Wire Line
+	4000 2650 4050 2650
+Wire Wire Line
+	4050 2650 4050 2200
+Wire Wire Line
+	4050 2200 3600 2200
+$Comp
+L power:GND #PWR?
+U 1 1 609D088A
+P 3800 3500
+F 0 "#PWR?" H 3800 3250 50  0001 C CNN
+F 1 "GND" H 3805 3327 50  0000 C CNN
+F 2 "" H 3800 3500 50  0001 C CNN
+F 3 "" H 3800 3500 50  0001 C CNN
+	1    3800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3500 3800 3450
+Connection ~ 3800 3450
+Wire Wire Line
+	3200 3450 3350 3450
+Text GLabel 3800 1800 1    50   Input ~ 0
+ANALOG_VCC
+Wire Wire Line
+	3800 1850 3800 1800
+Connection ~ 3800 1850
+$Comp
+L Device:C_Small C?
+U 1 1 609D8250
+P 4050 3300
+F 0 "C?" H 4142 3346 50  0000 L CNN
+F 1 "C_Small" H 4142 3255 50  0000 L CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "~" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 609DBFD3
+P 2600 2100
+F 0 "R?" V 2404 2100 50  0000 C CNN
+F 1 "R_Small" V 2495 2100 50  0000 C CNN
+F 2 "" H 2600 2100 50  0001 C CNN
+F 3 "~" H 2600 2100 50  0001 C CNN
+	1    2600 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 609DCB5E
+P 2800 3300
+F 0 "C?" H 2892 3346 50  0000 L CNN
+F 1 "C_Small" H 2892 3255 50  0000 L CNN
+F 2 "" H 2800 3300 50  0001 C CNN
+F 3 "~" H 2800 3300 50  0001 C CNN
+	1    2800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3200 2800 2100
+Wire Wire Line
+	2800 2100 3000 2100
+Wire Wire Line
+	2700 2100 2800 2100
+Connection ~ 2800 2100
+Wire Wire Line
+	2800 3400 2800 3450
+Wire Wire Line
+	2800 3450 3200 3450
+Connection ~ 3200 3450
+$Comp
+L Device:R_Small R?
+U 1 1 609DFBCE
+P 2350 3300
+F 0 "R?" H 2291 3254 50  0000 R CNN
+F 1 "R_Small" H 2291 3345 50  0000 R CNN
+F 2 "" H 2350 3300 50  0001 C CNN
+F 3 "~" H 2350 3300 50  0001 C CNN
+	1    2350 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3200 2350 2100
+Wire Wire Line
+	2350 2100 2500 2100
+Wire Wire Line
+	2350 3400 2350 3450
+Wire Wire Line
+	2350 3450 2800 3450
+Connection ~ 2800 3450
+Wire Wire Line
+	2950 2750 3350 2750
+Wire Wire Line
+	3350 2850 3350 2750
+Connection ~ 3350 2750
+Wire Wire Line
+	3350 2750 3400 2750
+Wire Wire Line
+	3350 3150 3350 3100
+Wire Wire Line
+	3350 3350 3350 3450
+Connection ~ 3350 3450
+Wire Wire Line
+	3350 3450 3800 3450
+Wire Wire Line
+	4000 2850 4050 2850
+Wire Wire Line
+	4050 2850 4050 3100
+Wire Wire Line
+	4050 3100 3350 3100
+Connection ~ 3350 3100
+Wire Wire Line
+	3350 3100 3350 3050
+Wire Wire Line
+	4050 3400 4050 3450
+Wire Wire Line
+	4050 3450 3800 3450
+Wire Wire Line
+	4050 3200 4050 3100
+Connection ~ 4050 3100
 $EndSCHEMATC

@@ -17,6 +17,8 @@ $Comp
 L Regulator_Linear:L7805 U?
 U 1 1 608A31A4
 P 1250 1050
+AR Path="/5F2B89D6/608A31A4" Ref="U?"  Part="1" 
+AR Path="/6089BBF0/608A31A4" Ref="U?"  Part="1" 
 F 0 "U?" H 1250 1292 50  0000 C CNN
 F 1 "L7805" H 1250 1201 50  0000 C CNN
 F 2 "" H 1275 900 50  0001 L CIN
@@ -56,6 +58,8 @@ $Comp
 L Device:C_Small C?
 U 1 1 608A31BA
 P 700 1250
+AR Path="/5F2B89D6/608A31BA" Ref="C?"  Part="1" 
+AR Path="/6089BBF0/608A31BA" Ref="C?"  Part="1" 
 F 0 "C?" H 792 1296 50  0000 L CNN
 F 1 "0.33uF" H 792 1205 50  0000 L CNN
 F 2 "" H 700 1250 50  0001 C CNN
@@ -76,4 +80,9 @@ MCU_12V
 Wire Wire Line
 	700  1000 700  1050
 Connection ~ 700  1050
+Text GLabel 1600 1000 1    50   Input ~ 0
+ANALOG_VCC
+Wire Wire Line
+	1600 1050 1600 1000
+Connection ~ 1600 1050
 $EndSCHEMATC
