@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A0 46811 33110
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -154,5 +154,11 @@ F134 "PI4" I R 2250 13900 50
 F135 "TIM8_CH1" I R 2250 11050 50 
 F136 "TIM8_CH2" I R 2250 11250 50 
 F137 "TIM8_CH3" I R 2250 11450 50 
+$EndSheet
+$Sheet
+S 3350 600  1350 2100
+U 6089BBF0
+F0 "analog" 50
+F1 "analog.sch" 50
 $EndSheet
 $EndSCHEMATC
