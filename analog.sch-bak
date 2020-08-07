@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 24
 Title ""
 Date ""
 Rev ""
@@ -85,184 +85,340 @@ ANALOG_VCC
 Wire Wire Line
 	1600 1050 1600 1000
 Connection ~ 1600 1050
-$Comp
-L Amplifier_Operational:AD8603 U?
-U 1 1 6098D7E7
-P 3700 2750
-F 0 "U?" H 3700 3231 50  0000 C CNN
-F 1 "AD8603" H 3700 3140 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3700 2750 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 3700 2950 50  0001 C CNN
-	1    3700 2750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:AD8603 U?
-U 1 1 609C2428
-P 3300 2200
-F 0 "U?" H 3300 2681 50  0000 C CNN
-F 1 "AD8603" H 3300 2590 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3300 2200 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 3300 2400 50  0001 C CNN
-	1    3300 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 609C682C
-P 3350 2950
-F 0 "R?" H 3291 2904 50  0000 R CNN
-F 1 "R_Small" H 3291 2995 50  0000 R CNN
-F 2 "" H 3350 2950 50  0001 C CNN
-F 3 "~" H 3350 2950 50  0001 C CNN
-	1    3350 2950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 609C8106
-P 3350 3250
-F 0 "R?" H 3291 3204 50  0000 R CNN
-F 1 "R_Small" H 3291 3295 50  0000 R CNN
-F 2 "" H 3350 3250 50  0001 C CNN
-F 3 "~" H 3350 3250 50  0001 C CNN
-	1    3350 3250
-	-1   0    0    1   
-$EndComp
+$Sheet
+S 3200 1100 500  500 
+U 5F2E88AE
+F0 "ch1" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 1350 50 
+F3 "IN" I L 3200 1350 50 
+$EndSheet
+$Sheet
+S 3200 1800 500  500 
+U 5F2EF8C7
+F0 "ch2" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 2050 50 
+F3 "IN" I L 3200 2050 50 
+$EndSheet
+$Sheet
+S 3200 2500 500  500 
+U 5F2F2991
+F0 "ch3" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 2750 50 
+F3 "IN" I L 3200 2750 50 
+$EndSheet
+$Sheet
+S 3200 3200 500  500 
+U 5F2F35AC
+F0 "ch4" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 3450 50 
+F3 "IN" I L 3200 3450 50 
+$EndSheet
+$Sheet
+S 3200 3900 500  500 
+U 5F2F35B0
+F0 "ch5" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 4150 50 
+F3 "IN" I L 3200 4150 50 
+$EndSheet
+$Sheet
+S 3200 4600 500  500 
+U 5F2F42EA
+F0 "ch6" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 4850 50 
+F3 "IN" I L 3200 4850 50 
+$EndSheet
+$Sheet
+S 3200 5300 500  500 
+U 5F2F46AF
+F0 "ch7" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 5550 50 
+F3 "IN" I L 3200 5550 50 
+$EndSheet
+$Sheet
+S 3200 6000 500  500 
+U 5F2F47A2
+F0 "ch8" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 3700 6250 50 
+F3 "IN" I L 3200 6250 50 
+$EndSheet
+$Sheet
+S 4500 1100 500  500 
+U 5F2F5200
+F0 "ch9" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 1350 50 
+F3 "IN" I L 4500 1350 50 
+$EndSheet
+$Sheet
+S 4500 1800 500  500 
+U 5F2F5204
+F0 "ch10" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 2050 50 
+F3 "IN" I L 4500 2050 50 
+$EndSheet
+$Sheet
+S 4500 2500 500  500 
+U 5F2F5208
+F0 "ch11" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 2750 50 
+F3 "IN" I L 4500 2750 50 
+$EndSheet
+$Sheet
+S 4500 3200 500  500 
+U 5F2F520C
+F0 "ch12" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 3450 50 
+F3 "IN" I L 4500 3450 50 
+$EndSheet
+$Sheet
+S 4500 3900 500  500 
+U 5F2F5210
+F0 "ch13" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 4150 50 
+F3 "IN" I L 4500 4150 50 
+$EndSheet
+$Sheet
+S 4500 4600 500  500 
+U 5F2F5214
+F0 "ch14" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 4850 50 
+F3 "IN" I L 4500 4850 50 
+$EndSheet
+$Sheet
+S 4500 5300 500  500 
+U 5F2F5218
+F0 "ch15" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 5550 50 
+F3 "IN" I L 4500 5550 50 
+$EndSheet
+$Sheet
+S 4500 6000 500  500 
+U 5F2F521C
+F0 "ch16" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 5000 6250 50 
+F3 "IN" I L 4500 6250 50 
+$EndSheet
+Text HLabel 3100 1350 0    50   Input ~ 0
+IN1
+Text HLabel 3100 2050 0    50   Input ~ 0
+IN2
+Text HLabel 3100 2750 0    50   Input ~ 0
+IN3
+Text HLabel 3100 3450 0    50   Input ~ 0
+IN4
+Text HLabel 3100 4150 0    50   Input ~ 0
+IN5
+Text HLabel 3100 4850 0    50   Input ~ 0
+IN6
+Text HLabel 3100 5550 0    50   Input ~ 0
+IN7
+Text HLabel 3100 6250 0    50   Input ~ 0
+IN8
 Wire Wire Line
-	3800 3050 3800 3450
+	3200 1350 3100 1350
 Wire Wire Line
-	2950 2750 2950 2300
+	3200 2050 3100 2050
 Wire Wire Line
-	2950 2300 3000 2300
+	3200 2750 3100 2750
 Wire Wire Line
-	3200 2500 3200 3450
+	3200 3450 3100 3450
 Wire Wire Line
-	3800 2450 3800 1850
+	3100 4150 3200 4150
 Wire Wire Line
-	3800 1850 3200 1850
+	3100 4850 3200 4850
 Wire Wire Line
-	3200 1850 3200 1900
+	3200 5550 3100 5550
 Wire Wire Line
-	4000 2650 4050 2650
+	3200 6250 3100 6250
+Text HLabel 3800 1350 2    50   Input ~ 0
+OUT1
+Text HLabel 3800 2050 2    50   Input ~ 0
+OUT2
+Text HLabel 3800 2750 2    50   Input ~ 0
+OUT3
+Text HLabel 3800 3450 2    50   Input ~ 0
+OUT4
+Text HLabel 3800 4150 2    50   Input ~ 0
+OUT5
+Text HLabel 3800 4850 2    50   Input ~ 0
+OUT6
+Text HLabel 3800 5550 2    50   Input ~ 0
+OUT7
+Text HLabel 3800 6250 2    50   Input ~ 0
+OUT8
 Wire Wire Line
-	4050 2650 4050 2200
+	3800 6250 3700 6250
 Wire Wire Line
-	4050 2200 3600 2200
-$Comp
-L power:GND #PWR?
-U 1 1 609D088A
-P 3800 3500
-F 0 "#PWR?" H 3800 3250 50  0001 C CNN
-F 1 "GND" H 3805 3327 50  0000 C CNN
-F 2 "" H 3800 3500 50  0001 C CNN
-F 3 "" H 3800 3500 50  0001 C CNN
-	1    3800 3500
-	1    0    0    -1  
-$EndComp
+	3800 5550 3700 5550
 Wire Wire Line
-	3800 3500 3800 3450
-Connection ~ 3800 3450
+	3800 4850 3700 4850
 Wire Wire Line
-	3200 3450 3350 3450
-Text GLabel 3800 1800 1    50   Input ~ 0
-ANALOG_VCC
+	3800 4150 3700 4150
 Wire Wire Line
-	3800 1850 3800 1800
-Connection ~ 3800 1850
-$Comp
-L Device:C_Small C?
-U 1 1 609D8250
-P 4050 3300
-F 0 "C?" H 4142 3346 50  0000 L CNN
-F 1 "C_Small" H 4142 3255 50  0000 L CNN
-F 2 "" H 4050 3300 50  0001 C CNN
-F 3 "~" H 4050 3300 50  0001 C CNN
-	1    4050 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 609DBFD3
-P 2600 2100
-F 0 "R?" V 2404 2100 50  0000 C CNN
-F 1 "R_Small" V 2495 2100 50  0000 C CNN
-F 2 "" H 2600 2100 50  0001 C CNN
-F 3 "~" H 2600 2100 50  0001 C CNN
-	1    2600 2100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 609DCB5E
-P 2800 3300
-F 0 "C?" H 2892 3346 50  0000 L CNN
-F 1 "C_Small" H 2892 3255 50  0000 L CNN
-F 2 "" H 2800 3300 50  0001 C CNN
-F 3 "~" H 2800 3300 50  0001 C CNN
-	1    2800 3300
-	1    0    0    -1  
-$EndComp
+	3800 3450 3700 3450
 Wire Wire Line
-	2800 3200 2800 2100
+	3800 2750 3700 2750
 Wire Wire Line
-	2800 2100 3000 2100
+	3800 2050 3700 2050
 Wire Wire Line
-	2700 2100 2800 2100
-Connection ~ 2800 2100
+	3800 1350 3700 1350
+Text HLabel 4400 1350 0    50   Input ~ 0
+IN9
+Text HLabel 4400 2050 0    50   Input ~ 0
+IN10
+Text HLabel 4400 2750 0    50   Input ~ 0
+IN11
+Text HLabel 4400 3450 0    50   Input ~ 0
+IN12
+Text HLabel 4400 4150 0    50   Input ~ 0
+IN13
+Text HLabel 4400 4850 0    50   Input ~ 0
+IN14
+Text HLabel 4400 5550 0    50   Input ~ 0
+IN15
+Text HLabel 4400 6250 0    50   Input ~ 0
+IN16
 Wire Wire Line
-	2800 3400 2800 3450
+	4500 1350 4400 1350
 Wire Wire Line
-	2800 3450 3200 3450
-Connection ~ 3200 3450
-$Comp
-L Device:R_Small R?
-U 1 1 609DFBCE
-P 2350 3300
-F 0 "R?" H 2291 3254 50  0000 R CNN
-F 1 "R_Small" H 2291 3345 50  0000 R CNN
-F 2 "" H 2350 3300 50  0001 C CNN
-F 3 "~" H 2350 3300 50  0001 C CNN
-	1    2350 3300
-	-1   0    0    1   
-$EndComp
+	4500 2050 4400 2050
 Wire Wire Line
-	2350 3200 2350 2100
+	4500 2750 4400 2750
 Wire Wire Line
-	2350 2100 2500 2100
+	4500 3450 4400 3450
 Wire Wire Line
-	2350 3400 2350 3450
+	4500 4150 4400 4150
 Wire Wire Line
-	2350 3450 2800 3450
-Connection ~ 2800 3450
+	4500 4850 4400 4850
 Wire Wire Line
-	2950 2750 3350 2750
+	4500 5550 4400 5550
 Wire Wire Line
-	3350 2850 3350 2750
-Connection ~ 3350 2750
+	4500 6250 4400 6250
+Text HLabel 5100 1350 2    50   Input ~ 0
+OUT9
+Text HLabel 5100 2050 2    50   Input ~ 0
+OUT10
+Text HLabel 5100 2750 2    50   Input ~ 0
+OUT11
+Text HLabel 5100 3450 2    50   Input ~ 0
+OUT12
+Text HLabel 5100 4150 2    50   Input ~ 0
+OUT13
+Text HLabel 5100 4850 2    50   Input ~ 0
+OUT14
+Text HLabel 5100 5550 2    50   Input ~ 0
+OUT15
+Text HLabel 5100 6250 2    50   Input ~ 0
+OUT16
 Wire Wire Line
-	3350 2750 3400 2750
+	5100 6250 5000 6250
 Wire Wire Line
-	3350 3150 3350 3100
+	5100 5550 5000 5550
 Wire Wire Line
-	3350 3350 3350 3450
-Connection ~ 3350 3450
+	5100 4850 5000 4850
 Wire Wire Line
-	3350 3450 3800 3450
+	5100 4150 5000 4150
 Wire Wire Line
-	4000 2850 4050 2850
+	5100 3450 5000 3450
 Wire Wire Line
-	4050 2850 4050 3100
+	5100 2750 5000 2750
 Wire Wire Line
-	4050 3100 3350 3100
-Connection ~ 3350 3100
+	5100 2050 5000 2050
 Wire Wire Line
-	3350 3100 3350 3050
+	5100 1350 5000 1350
+$Sheet
+S 5900 3200 500  500 
+U 5F30E3BD
+F0 "sheet5F30E3BD" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 6400 3450 50 
+F3 "IN" I L 5900 3450 50 
+$EndSheet
+$Sheet
+S 5900 3900 500  500 
+U 5F30E3C1
+F0 "sheet5F30E3C1" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 6400 4150 50 
+F3 "IN" I L 5900 4150 50 
+$EndSheet
+$Sheet
+S 5900 4600 500  500 
+U 5F30E3C5
+F0 "sheet5F30E3C5" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 6400 4850 50 
+F3 "IN" I L 5900 4850 50 
+$EndSheet
+$Sheet
+S 5900 5300 500  500 
+U 5F30E3C9
+F0 "sheet5F30E3C9" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 6400 5550 50 
+F3 "IN" I L 5900 5550 50 
+$EndSheet
+Text HLabel 5800 3450 0    50   Input ~ 0
+IN17
+Text HLabel 5800 4150 0    50   Input ~ 0
+IN18
+Text HLabel 5800 4850 0    50   Input ~ 0
+IN19
+Text HLabel 5800 5550 0    50   Input ~ 0
+IN20
 Wire Wire Line
-	4050 3400 4050 3450
+	5900 3450 5800 3450
 Wire Wire Line
-	4050 3450 3800 3450
+	5900 4150 5800 4150
 Wire Wire Line
-	4050 3200 4050 3100
-Connection ~ 4050 3100
+	5900 4850 5800 4850
+Wire Wire Line
+	5900 5550 5800 5550
+Text HLabel 6500 3450 2    50   Input ~ 0
+OUT17
+Text HLabel 6500 4150 2    50   Input ~ 0
+OUT18
+Text HLabel 6500 4850 2    50   Input ~ 0
+OUT19
+Text HLabel 6500 5550 2    50   Input ~ 0
+OUT20
+Wire Wire Line
+	6500 5550 6400 5550
+Wire Wire Line
+	6500 4850 6400 4850
+Wire Wire Line
+	6500 4150 6400 4150
+Wire Wire Line
+	6500 3450 6400 3450
+$Sheet
+S 5900 6000 500  500 
+U 5F312F3D
+F0 "sheet5F312F3D" 50
+F1 "ch1.sch" 50
+F2 "OUT" I R 6400 6250 50 
+F3 "IN" I L 5900 6250 50 
+$EndSheet
+Text HLabel 5800 6250 0    50   Input ~ 0
+IN21
+Wire Wire Line
+	5900 6250 5800 6250
+Text HLabel 6500 6250 2    50   Input ~ 0
+OUT21
+Wire Wire Line
+	6500 6250 6400 6250
 $EndSCHEMATC
