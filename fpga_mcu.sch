@@ -371,4 +371,10 @@ Wire Wire Line
 	2400 6950 2250 6950
 Wire Wire Line
 	2250 7050 2400 7050
+$Sheet
+S 5500 7000 2500 3000
+U 5F676DED
+F0 "fpga" 50
+F1 "fpga.sch" 50
+$EndSheet
 $EndSCHEMATC
