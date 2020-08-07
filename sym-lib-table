@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ad8656)(type Legacy)(uri ${KIPRJMOD}/ad8656.lib)(options "")(descr ""))
+  (lib (name IS61WV25616BLL)(type Legacy)(uri ${KIPRJMOD}/IS61WV25616BLL.lib)(options "")(descr ""))
 )

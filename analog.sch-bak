@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 24
+Sheet 3 25
 Title ""
 Date ""
 Rev ""
@@ -421,4 +421,23 @@ Text HLabel 6500 6250 2    50   Input ~ 0
 OUT21
 Wire Wire Line
 	6500 6250 6400 6250
+Text GLabel 2100 1000 1    50   Input ~ 0
+MCU_5V
+$Comp
+L Device:R_Small R?
+U 1 1 5F30D563
+P 1850 1050
+F 0 "R?" V 1654 1050 50  0000 C CNN
+F 1 "0*" V 1745 1050 50  0000 C CNN
+F 2 "" H 1850 1050 50  0001 C CNN
+F 3 "~" H 1850 1050 50  0001 C CNN
+	1    1850 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1050 1600 1050
+Wire Wire Line
+	1950 1050 2100 1050
+Wire Wire Line
+	2100 1050 2100 1000
 $EndSCHEMATC

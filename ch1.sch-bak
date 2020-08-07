@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 22 24
+Sheet 4 25
 Title ""
 Date ""
 Rev ""
@@ -366,4 +366,26 @@ Connection ~ 6100 3600
 Wire Wire Line
 	6450 3800 6400 3800
 Connection ~ 6400 3800
+$Comp
+L Device:C_Small C?
+U 1 1 5F318B62
+P 4250 3800
+AR Path="/6089BBF0/5F2E88AE/5F318B62" Ref="C?"  Part="1" 
+AR Path="/6089BBF0/5F2EF8C7/5F318B62" Ref="C?"  Part="1" 
+F 0 "C?" H 4342 3846 50  0000 L CNN
+F 1 "0.1uF" H 4342 3755 50  0000 L CNN
+F 2 "" H 4250 3800 50  0001 C CNN
+F 3 "~" H 4250 3800 50  0001 C CNN
+	1    4250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3700 4250 3350
+Wire Wire Line
+	4250 3350 5000 3350
+Connection ~ 5000 3350
+Wire Wire Line
+	4250 3900 4250 4200
+Wire Wire Line
+	4250 4200 4900 4200
 $EndSCHEMATC
