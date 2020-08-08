@@ -403,20 +403,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    13750 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FCA4F8B
-P 10850 5350
-AR Path="/5F2B89D6/5FCA4F8B" Ref="U?"  Part="1" 
-AR Path="/5F676DED/5FCA4F8B" Ref="U?"  Part="1" 
-AR Path="/5FCA4F8B" Ref="U?"  Part="1" 
-F 0 "U?" H 10850 5592 50  0000 C CNN
-F 1 "L7805" H 10850 5501 50  0000 C CNN
-F 2 "" H 10875 5200 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 10850 5300 50  0001 C CNN
-	1    10850 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11150 5350 11200 5350
 $Comp
@@ -1416,20 +1402,6 @@ Wire Wire Line
 	11200 5350 11500 5350
 Wire Wire Line
 	11750 5300 11750 5350
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FCB6A41
-P 10850 4150
-AR Path="/5F2B89D6/5FCB6A41" Ref="U?"  Part="1" 
-AR Path="/6089BBF0/5FCB6A41" Ref="U?"  Part="1" 
-AR Path="/5FCB6A41" Ref="U?"  Part="1" 
-F 0 "U?" H 10850 4392 50  0000 C CNN
-F 1 "L7805" H 10850 4301 50  0000 C CNN
-F 2 "" H 10875 4000 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 10850 4100 50  0001 C CNN
-	1    10850 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11150 4150 11200 4150
 Wire Wire Line
@@ -2120,19 +2092,6 @@ Wire Wire Line
 Connection ~ 13000 9950
 Text GLabel 13000 9550 1    50   Input ~ 0
 MCU_VREF
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FD584C2
-P 10850 6450
-AR Path="/5F2B89D6/5FD584C2" Ref="U?"  Part="1" 
-AR Path="/5FD584C2" Ref="U?"  Part="1" 
-F 0 "U?" H 10850 6692 50  0000 C CNN
-F 1 "L7805" H 10850 6601 50  0000 C CNN
-F 2 "" H 10875 6300 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 10850 6400 50  0001 C CNN
-	1    10850 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11150 6450 11200 6450
 Connection ~ 11750 6450
@@ -2519,4 +2478,58 @@ Wire Wire Line
 Connection ~ 12800 6450
 Wire Wire Line
 	12800 6450 12600 6450
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C556D3
+P 10850 6450
+F 0 "U?" H 10850 6692 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 6601 50  0000 C CNN
+F 2 "" H 10850 6700 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 6450 50  0001 C CNN
+	1    10850 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C56E50
+P 10850 4150
+F 0 "U?" H 10850 4392 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 4301 50  0000 C CNN
+F 2 "" H 10850 4400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 4150 50  0001 C CNN
+	1    10850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C57846
+P 10850 5350
+F 0 "U?" H 10850 5592 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 5501 50  0000 C CNN
+F 2 "" H 10850 5600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 5350 50  0001 C CNN
+	1    10850 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C74213
+P 21350 3550
+F 0 "R?" H 21409 3596 50  0000 L CNN
+F 1 "120" H 21409 3505 50  0000 L CNN
+F 2 "" H 21350 3550 50  0001 C CNN
+F 3 "~" H 21350 3550 50  0001 C CNN
+	1    21350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21350 3450 21350 3400
+Wire Wire Line
+	21350 3400 21000 3400
+Connection ~ 21000 3400
+Wire Wire Line
+	21000 3750 21350 3750
+Wire Wire Line
+	21350 3750 21350 3650
+Connection ~ 21000 3750
 $EndSCHEMATC

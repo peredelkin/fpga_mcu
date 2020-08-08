@@ -403,20 +403,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    13750 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FCA4F8B
-P 10850 5350
-AR Path="/5F2B89D6/5FCA4F8B" Ref="U?"  Part="1" 
-AR Path="/5F676DED/5FCA4F8B" Ref="U?"  Part="1" 
-AR Path="/5FCA4F8B" Ref="U?"  Part="1" 
-F 0 "U?" H 10850 5592 50  0000 C CNN
-F 1 "L7805" H 10850 5501 50  0000 C CNN
-F 2 "" H 10875 5200 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 10850 5300 50  0001 C CNN
-	1    10850 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11150 5350 11200 5350
 $Comp
@@ -1416,111 +1402,97 @@ Wire Wire Line
 	11200 5350 11500 5350
 Wire Wire Line
 	11750 5300 11750 5350
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FCB6A41
-P 8700 3850
-AR Path="/5F2B89D6/5FCB6A41" Ref="U?"  Part="1" 
-AR Path="/6089BBF0/5FCB6A41" Ref="U?"  Part="1" 
-AR Path="/5FCB6A41" Ref="U?"  Part="1" 
-F 0 "U?" H 8700 4092 50  0000 C CNN
-F 1 "L7805" H 8700 4001 50  0000 C CNN
-F 2 "" H 8725 3700 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8700 3800 50  0001 C CNN
-	1    8700 3850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9000 3850 9050 3850
+	11150 4150 11200 4150
 Wire Wire Line
-	8700 4250 8700 4200
+	10850 4550 10850 4500
 $Comp
 L Device:C_Small C?
 U 1 1 5FCB6A4A
-P 9050 4050
+P 11200 4350
 AR Path="/5F2B89D6/5FCB6A4A" Ref="C?"  Part="1" 
 AR Path="/6089BBF0/5FCB6A4A" Ref="C?"  Part="1" 
 AR Path="/5FCB6A4A" Ref="C?"  Part="1" 
-F 0 "C?" H 9142 4096 50  0000 L CNN
-F 1 "0.1uF" H 9142 4005 50  0000 L CNN
-F 2 "" H 9050 4050 50  0001 C CNN
-F 3 "~" H 9050 4050 50  0001 C CNN
-	1    9050 4050
+F 0 "C?" H 11292 4396 50  0000 L CNN
+F 1 "0.1uF" H 11292 4305 50  0000 L CNN
+F 2 "" H 11200 4350 50  0001 C CNN
+F 3 "~" H 11200 4350 50  0001 C CNN
+	1    11200 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 3950 9050 3850
+	11200 4250 11200 4150
 Wire Wire Line
-	9050 4150 9050 4200
+	11200 4450 11200 4500
 Wire Wire Line
-	9050 4200 8700 4200
-Connection ~ 8700 4200
+	11200 4500 10850 4500
+Connection ~ 10850 4500
 Wire Wire Line
-	8700 4200 8700 4150
+	10850 4500 10850 4450
 $Comp
 L Device:C_Small C?
 U 1 1 5FCB6A55
-P 8150 4050
+P 10300 4350
 AR Path="/5F2B89D6/5FCB6A55" Ref="C?"  Part="1" 
 AR Path="/6089BBF0/5FCB6A55" Ref="C?"  Part="1" 
 AR Path="/5FCB6A55" Ref="C?"  Part="1" 
-F 0 "C?" H 8242 4096 50  0000 L CNN
-F 1 "0.33uF" H 8242 4005 50  0000 L CNN
-F 2 "" H 8150 4050 50  0001 C CNN
-F 3 "~" H 8150 4050 50  0001 C CNN
-	1    8150 4050
+F 0 "C?" H 10392 4396 50  0000 L CNN
+F 1 "0.33uF" H 10392 4305 50  0000 L CNN
+F 2 "" H 10300 4350 50  0001 C CNN
+F 3 "~" H 10300 4350 50  0001 C CNN
+	1    10300 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 4150 8150 4200
+	10300 4450 10300 4500
 Wire Wire Line
-	8150 4200 8700 4200
+	10300 4500 10850 4500
 Wire Wire Line
-	8400 3850 8150 3850
+	10550 4150 10300 4150
 Wire Wire Line
-	8150 3850 8150 3950
-Text GLabel 8150 3800 1    50   Input ~ 0
+	10300 4150 10300 4250
+Text GLabel 10300 4100 1    50   Input ~ 0
 MCU_12V
 Wire Wire Line
-	8150 3800 8150 3850
-Connection ~ 8150 3850
-Text GLabel 9050 3800 1    50   Input ~ 0
+	10300 4100 10300 4150
+Connection ~ 10300 4150
+Text GLabel 11200 4100 1    50   Input ~ 0
 ANALOG_VCC
 Wire Wire Line
-	9050 3850 9050 3800
-Connection ~ 9050 3850
-Text GLabel 9800 3800 1    50   Input ~ 0
+	11200 4150 11200 4100
+Connection ~ 11200 4150
+Text GLabel 11950 4100 1    50   Input ~ 0
 MCU_5V
 $Comp
 L Device:R_Small R?
 U 1 1 5FCB6A66
-P 9600 3850
+P 11750 4150
 AR Path="/6089BBF0/5FCB6A66" Ref="R?"  Part="1" 
 AR Path="/5FCB6A66" Ref="R?"  Part="1" 
-F 0 "R?" V 9404 3850 50  0000 C CNN
-F 1 "0*" V 9495 3850 50  0000 C CNN
-F 2 "" H 9600 3850 50  0001 C CNN
-F 3 "~" H 9600 3850 50  0001 C CNN
-	1    9600 3850
+F 0 "R?" V 11554 4150 50  0000 C CNN
+F 1 "0*" V 11645 4150 50  0000 C CNN
+F 2 "" H 11750 4150 50  0001 C CNN
+F 3 "~" H 11750 4150 50  0001 C CNN
+	1    11750 4150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9500 3850 9350 3850
+	11650 4150 11500 4150
 Wire Wire Line
-	9700 3850 9800 3850
+	11850 4150 11950 4150
 Wire Wire Line
-	9800 3850 9800 3800
+	11950 4150 11950 4100
 $Comp
 L power:GND #PWR?
 U 1 1 5FCC6D16
-P 8700 4250
+P 10850 4550
 AR Path="/5F676DED/5FCC6D16" Ref="#PWR?"  Part="1" 
 AR Path="/5FCC6D16" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8700 4000 50  0001 C CNN
-F 1 "GND" H 8705 4077 50  0000 C CNN
-F 2 "" H 8700 4250 50  0001 C CNN
-F 3 "" H 8700 4250 50  0001 C CNN
-	1    8700 4250
+F 0 "#PWR?" H 10850 4300 50  0001 C CNN
+F 1 "GND" H 10855 4377 50  0000 C CNN
+F 2 "" H 10850 4550 50  0001 C CNN
+F 3 "" H 10850 4550 50  0001 C CNN
+	1    10850 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2120,19 +2092,6 @@ Wire Wire Line
 Connection ~ 13000 9950
 Text GLabel 13000 9550 1    50   Input ~ 0
 MCU_VREF
-$Comp
-L Regulator_Linear:L7805 U?
-U 1 1 5FD584C2
-P 10850 6450
-AR Path="/5F2B89D6/5FD584C2" Ref="U?"  Part="1" 
-AR Path="/5FD584C2" Ref="U?"  Part="1" 
-F 0 "U?" H 10850 6692 50  0000 C CNN
-F 1 "L7805" H 10850 6601 50  0000 C CNN
-F 2 "" H 10875 6300 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 10850 6400 50  0001 C CNN
-	1    10850 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11150 6450 11200 6450
 Connection ~ 11750 6450
@@ -2422,29 +2381,29 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 600DF069
-P 9600 3350
+P 11750 3650
 AR Path="/6089BBF0/600DF069" Ref="R?"  Part="1" 
 AR Path="/600DF069" Ref="R?"  Part="1" 
-F 0 "R?" V 9404 3350 50  0000 C CNN
-F 1 "0*" V 9495 3350 50  0000 C CNN
-F 2 "" H 9600 3350 50  0001 C CNN
-F 3 "~" H 9600 3350 50  0001 C CNN
-	1    9600 3350
+F 0 "R?" V 11554 3650 50  0000 C CNN
+F 1 "0*" V 11645 3650 50  0000 C CNN
+F 2 "" H 11750 3650 50  0001 C CNN
+F 3 "~" H 11750 3650 50  0001 C CNN
+	1    11750 3650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9500 3350 9350 3350
+	11650 3650 11500 3650
 Wire Wire Line
-	9350 3350 9350 3850
-Connection ~ 9350 3850
+	11500 3650 11500 4150
+Connection ~ 11500 4150
 Wire Wire Line
-	9350 3850 9050 3850
-Text GLabel 9800 3250 1    50   Input ~ 0
+	11500 4150 11200 4150
+Text GLabel 11950 3550 1    50   Input ~ 0
 FPGA_5V
 Wire Wire Line
-	9800 3250 9800 3350
+	11950 3550 11950 3650
 Wire Wire Line
-	9800 3350 9700 3350
+	11950 3650 11850 3650
 $Comp
 L Device:R_Small R?
 U 1 1 601ECA6D
@@ -2519,4 +2478,37 @@ Wire Wire Line
 Connection ~ 12800 6450
 Wire Wire Line
 	12800 6450 12600 6450
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C556D3
+P 10850 6450
+F 0 "U?" H 10850 6692 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 6601 50  0000 C CNN
+F 2 "" H 10850 6700 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 6450 50  0001 C CNN
+	1    10850 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C56E50
+P 10850 4150
+F 0 "U?" H 10850 4392 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 4301 50  0000 C CNN
+F 2 "" H 10850 4400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 4150 50  0001 C CNN
+	1    10850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1084-5.0 U?
+U 1 1 60C57846
+P 10850 5350
+F 0 "U?" H 10850 5592 50  0000 C CNN
+F 1 "LM1084-5.0" H 10850 5501 50  0000 C CNN
+F 2 "" H 10850 5600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 5350 50  0001 C CNN
+	1    10850 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
