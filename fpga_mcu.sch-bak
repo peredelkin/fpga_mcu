@@ -2511,4 +2511,25 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 10850 5350 50  0001 C CNN
 	1    10850 5350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C74213
+P 21350 3550
+F 0 "R?" H 21409 3596 50  0000 L CNN
+F 1 "120" H 21409 3505 50  0000 L CNN
+F 2 "" H 21350 3550 50  0001 C CNN
+F 3 "~" H 21350 3550 50  0001 C CNN
+	1    21350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21350 3450 21350 3400
+Wire Wire Line
+	21350 3400 21000 3400
+Connection ~ 21000 3400
+Wire Wire Line
+	21000 3750 21350 3750
+Wire Wire Line
+	21350 3750 21350 3650
+Connection ~ 21000 3750
 $EndSCHEMATC

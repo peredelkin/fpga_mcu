@@ -856,7 +856,7 @@ Wire Wire Line
 Wire Wire Line
 	14500 4300 14500 4250
 Wire Wire Line
-	14050 3400 14500 3400
+	14050 3400 14250 3400
 Wire Wire Line
 	14500 3400 14500 3350
 $Comp
@@ -2532,4 +2532,43 @@ Wire Wire Line
 Wire Wire Line
 	21350 3750 21350 3650
 Connection ~ 21000 3750
+$Comp
+L Regulator_Linear:LD1117S12TR_SOT223 U?
+U 1 1 60CF3860
+P 13750 2500
+AR Path="/5F676DED/60CF3860" Ref="U?"  Part="1" 
+AR Path="/60CF3860" Ref="U?"  Part="1" 
+F 0 "U?" H 13750 2742 50  0000 C CNN
+F 1 "LD1117S12TR_SOT223" H 13750 2651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 13750 2700 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 13850 2250 50  0001 C CNN
+	1    13750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CF3F7A
+P 13750 2900
+AR Path="/5F676DED/60CF3F7A" Ref="#PWR?"  Part="1" 
+AR Path="/60CF3F7A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 13750 2650 50  0001 C CNN
+F 1 "GND" H 13755 2727 50  0000 C CNN
+F 2 "" H 13750 2900 50  0001 C CNN
+F 3 "" H 13750 2900 50  0001 C CNN
+	1    13750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 2900 13750 2800
+Wire Wire Line
+	13450 2500 13300 2500
+Wire Wire Line
+	13300 2500 13300 3400
+Wire Wire Line
+	14050 2500 14250 2500
+Wire Wire Line
+	14250 2500 14250 3400
+Connection ~ 14250 3400
+Wire Wire Line
+	14250 3400 14500 3400
 $EndSCHEMATC
