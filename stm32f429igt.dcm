@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32f429IGT
+D STM32F437IET
+K STM32F437IET
+$ENDCMP
+#
+#End Doc Library

@@ -2,4 +2,5 @@
   (lib (name ad8656)(type Legacy)(uri ${KIPRJMOD}/ad8656.lib)(options "")(descr ""))
   (lib (name IS61WV25616BLL)(type Legacy)(uri ${KIPRJMOD}/IS61WV25616BLL.lib)(options "")(descr ""))
   (lib (name ep4ce22)(type Legacy)(uri ${KIPRJMOD}/ep4ce22.lib)(options "")(descr ""))
+  (lib (name stm32f429igt)(type Legacy)(uri ${KIPRJMOD}/stm32f429igt.lib)(options "")(descr ""))
 )
