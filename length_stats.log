@@ -1,0 +1,12 @@
+08-12 13:38:30 length_stats.action_length_stats 271:Plugin executed on: 'linux'
+08-12 13:38:30 length_stats.action_length_stats 272:Plugin executed with python version: '3.8.2 (default, Apr  1 2020, 15:52:55) \n[GCC 9.3.0]'
+08-12 13:38:30 length_stats.action_length_stats 273:KiCad build version: 5.1.6~rc1+dfsg1-1
+08-12 13:38:30 length_stats.action_length_stats 274:Length stats plugin version: 29 started
+08-12 13:38:31 STDERR 312:/home/ruslan/.kicad_plugins/length_stats/action_length_stats.py:71: wxPyDeprecationWarning: Call to deprecated item. Use InsertItem instead.
+08-12 13:38:31 STDERR 312:  index = self.net_list.InsertStringItem(index_net, net)
+08-12 13:38:31 STDERR 312:/home/ruslan/.kicad_plugins/length_stats/action_length_stats.py:72: wxPyDeprecationWarning: Call to deprecated item. Use SetItem instead.
+08-12 13:38:31 STDERR 312:  self.net_list.SetStringItem(index, 1, "0.0")
+08-12 13:38:31 length_stats.action_length_stats 88:Lenght stats gui initialized
+08-12 13:38:31 length_stats.action_length_stats 89:Nets for stats are;
+['/FSMC_nWE']
+08-12 13:38:38 length_stats.action_length_stats 113:Closing GUI
